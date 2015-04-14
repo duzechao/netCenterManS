@@ -2,6 +2,34 @@
 <items version="2" >
 
     <item
+        jar="D:\biye\netCenterManS\netCenterManS\libs\volley.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4a94601db9bdfb7dc60efabb3dea91a0675f591d">
+        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\volley-5a04af8c70951fb68ed1031688e06b42587e6be3.jar" />
+    </item>
+    <item
+        jar="D:\biye\netCenterManS\netCenterManS\libs\universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-d2c7aa79987424d5ac293c0248af98a4a57a188e.jar" />
+    </item>
+    <item
+        jar="D:\biye\netCenterManS\netCenterManS\libs\avoscloud-push-v3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ca269f4e5421010656bb324052d6b78859c93251">
+        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\avoscloud-push-v3.0-29dc9d45ba71930952f8dbbc00a87fd8913a9e83.jar" />
+    </item>
+    <item
+        jar="D:\biye\netCenterManS\netCenterManS\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\classes-424eb73df5d371ab79ae59fcbe37a3b20b4e5623.jar" />
+    </item>
+    <item
         jar="D:\biye\netCenterManS\netCenterManS\libs\Java-WebSocket-1.2.0-leancloud.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -16,55 +44,6 @@
         <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\classes-00c84aa7ab3dcd73bf3e7b7fcc1b31b753aef08c.jar" />
     </item>
     <item
-        jar="D:\biye\netCenterManS\netCenterManS\libs\qq.sdk.1.6.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="896145203364b9e1d055cb81ac127bab139ad91d">
-        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\qq.sdk.1.6.1-73e85f89a0b47dfe1d291dba273070fd15d9b4c4.jar" />
-    </item>
-    <item
-        jar="D:\biye\netCenterManS\netCenterManS\libs\httpmime-4.2.4.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="dba4d4d224e2ca872af5be8d2992777583145478">
-        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\httpmime-4.2.4-20107dec3e8b1f64dac46620b2987742dc66ad77.jar" />
-    </item>
-    <item
-        jar="D:\biye\netCenterManS\netCenterManS\libs\fastjson.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d449ce9b6023c059db09be5170229162a77e007a">
-        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\fastjson-aafe45addec22a0c0940ef1d96b75339f89434b7.jar" />
-    </item>
-    <item
-        jar="D:\biye\netCenterManS\netCenterManS\libs\jsoup-1.8.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3d57e95c0f150b885ccdbda7a12bef353fd31d02">
-        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\jsoup-1.8.1-6dc6800b57adda1c097e6dd2578a6b348ff684c3.jar" />
-    </item>
-    <item
-        jar="D:\biye\netCenterManS\netCenterManS\libs\volley.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4a94601db9bdfb7dc60efabb3dea91a0675f591d">
-        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\volley-5a04af8c70951fb68ed1031688e06b42587e6be3.jar" />
-    </item>
-    <item
-        jar="D:\biye\netCenterManS\netCenterManS\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\classes-424eb73df5d371ab79ae59fcbe37a3b20b4e5623.jar" />
-    </item>
-    <item
-        jar="D:\biye\netCenterManS\netCenterManS\libs\avoscloud-push-v3.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ca269f4e5421010656bb324052d6b78859c93251">
-        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\avoscloud-push-v3.0-29dc9d45ba71930952f8dbbc00a87fd8913a9e83.jar" />
-    </item>
-    <item
         jar="D:\biye\netCenterManS\netCenterManS\libs\android-async-http-1.4.6.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -77,6 +56,20 @@
         revision="21.1.2"
         sha1="359195b5a56e9746650e30caf565d3bd89793903">
         <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\classes-51738bea0c4705407e948bae79d7d742e5ea59e9.jar" />
+    </item>
+    <item
+        jar="D:\biye\netCenterManS\netCenterManS\libs\qq.sdk.1.6.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="896145203364b9e1d055cb81ac127bab139ad91d">
+        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\qq.sdk.1.6.1-73e85f89a0b47dfe1d291dba273070fd15d9b4c4.jar" />
+    </item>
+    <item
+        jar="D:\biye\netCenterManS\netCenterManS\libs\httpmime-4.2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dba4d4d224e2ca872af5be8d2992777583145478">
+        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\httpmime-4.2.4-20107dec3e8b1f64dac46620b2987742dc66ad77.jar" />
     </item>
     <item
         jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
@@ -105,6 +98,20 @@
         revision="21.1.2"
         sha1="43fd5477b32f763d968e1d5527e7958b8ce13321">
         <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\classes-3c85362462d98d229715db443edb093497ffbba6.jar" />
+    </item>
+    <item
+        jar="D:\biye\netCenterManS\netCenterManS\libs\fastjson.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d449ce9b6023c059db09be5170229162a77e007a">
+        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\fastjson-aafe45addec22a0c0940ef1d96b75339f89434b7.jar" />
+    </item>
+    <item
+        jar="D:\biye\netCenterManS\netCenterManS\libs\jsoup-1.8.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3d57e95c0f150b885ccdbda7a12bef353fd31d02">
+        <dex dex="D:\biye\netCenterManS\netCenterManS\build\intermediates\pre-dexed\debug\jsoup-1.8.1-6dc6800b57adda1c097e6dd2578a6b348ff684c3.jar" />
     </item>
 
 </items>

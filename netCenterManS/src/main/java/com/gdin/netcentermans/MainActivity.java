@@ -24,6 +24,7 @@ import android.widget.RelativeLayout;
 import com.avos.avoscloud.AVUser;
 import com.gdin.netcentermans.fragment.ApplyFragment;
 import com.gdin.netcentermans.fragment.MyRepairFragment;
+import com.gdin.netcentermans.fragment.NewsFragment;
 import com.gdin.netcentermans.fragment.RenewFragment;
 import com.gdin.netcentermans.fragment.RepairFragmentN;
 import com.gdin.netcentermans.fragment.ResetPassFragment;
@@ -113,6 +114,8 @@ public class MainActivity extends FragmentActivity implements OnTouchListener,
 		// 禁用长按监听
 		mGestureDetector.setIsLongpressEnabled(false);
 		getMAX_WIDTH();
+		getSupportFragmentManager().beginTransaction().replace(R.id.frgment_main_content, new NewsFragment()).addToBackStack("news").commit();
+
 	}
 
 	@Override

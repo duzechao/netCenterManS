@@ -8,6 +8,12 @@ import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVInstallation;
 import com.avos.avoscloud.AVOSCloud;
 import com.avos.avoscloud.SaveCallback;
+import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
+import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 
 public class MyApplication extends Application{
 	
@@ -36,6 +42,11 @@ public class MyApplication extends Application{
                         }
                     }
                 });
+
+        // 创建默认的ImageLoader配置参数
+        ImageLoaderConfiguration configuration = new ImageLoaderConfiguration.Builder(this).diskCacheFileNameGenerator(new Md5FileNameGenerator()).tasksProcessingOrder(QueueProcessingType.LIFO).defaultDisplayImageOptions(DisplayImageOptions.createSimple()).diskCacheSize(200).build();
+        // Initialize ImageLoader with configuration.
+        ImageLoader.getInstance().init(configuration);
 	}
 
 }
