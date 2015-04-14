@@ -1,0 +1,12 @@
+/build/
+/netCenterManS/build/
+/circleButtonLib/build/
+/androidPullToRefreshLib/build/
+*.class
+*.DS_Store
+*.bin
+/.gradle/
+/.idea/
+local.properties
+
+
