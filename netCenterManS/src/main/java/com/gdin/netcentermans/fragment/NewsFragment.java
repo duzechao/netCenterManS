@@ -6,8 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
@@ -17,6 +19,8 @@ import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
 import com.avos.avoscloud.FindCallback;
+import com.easyandroidanimations.library.PuffInAnimation;
+import com.easyandroidanimations.library.PuffOutAnimation;
 import com.gdin.netcentermans.R;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
@@ -40,6 +44,10 @@ public class NewsFragment extends Fragment{
     private MyAdapter adapter;
 
 	private ViewFlipper viewFlipper;
+    private LinearLayout llMain;
+    private LinearLayout llContent;
+    private TextView tvContent;
+    private TextView tvReturn;
 
 	private static NewsFragment fragment;
 
@@ -61,10 +69,30 @@ public class NewsFragment extends Fragment{
 
 	private void initView(){
 		viewFlipper = (ViewFlipper) view.findViewById(R.id.vf_news);
+        llMain = (LinearLayout) view.findViewById(R.id.ll_news_main);
+        llContent = (LinearLayout) view.findViewById(R.id.ll_news_content);
+        tvReturn = (TextView) view.findViewById(R.id.tv_news_content_return);
+        tvReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new PuffOutAnimation(llContent).animate();
+                new PuffInAnimation(llMain).animate();
+            }
+        });
+        tvContent = (TextView) view.findViewById(R.id.tv_news_content);
         lvNews = (ListView) view.findViewById(R.id.lv_news);
         data = new ArrayList<>();
         adapter = new MyAdapter(data);
         lvNews.setAdapter(adapter);
+        lvNews.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                tvContent.setText(data.get(position).getString("content"));
+                new PuffOutAnimation(llMain).animate();
+                new PuffInAnimation(llContent).animate();
+
+            }
+        });
 
 		AVQuery.getQuery("News").findInBackground(new FindCallback<AVObject>() {
 			@Override
