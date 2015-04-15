@@ -93,6 +93,7 @@
     <orderEntry type="library" exported="" name="universal-image-loader-1.9.3" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-21.0.3" level="project" />
     <orderEntry type="library" exported="" name="avoscloud-sdk-v3.0" level="project" />
+    <orderEntry type="library" exported="" name="easyandroidanimationslibrary-v0.5" level="project" />
     <orderEntry type="library" exported="" name="avoscloud-push-v3.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-21.0.3" level="project" />
     <orderEntry type="library" exported="" name="android-async-http-1.4.6" level="project" />
