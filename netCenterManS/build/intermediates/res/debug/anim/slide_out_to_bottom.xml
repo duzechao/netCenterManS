@@ -19,4 +19,4 @@
     android:duration="@android:integer/config_longAnimTime"
     android:fromYDelta="0"
     android:toYDelta="100%p" />
-<!-- From: file:/D:/biye/netCenterManS/androidPullToRefreshLib/src/main/res/anim/slide_out_to_bottom.xml --><!-- From: file:/D:/biye/netCenterManS/netCenterManS/build/intermediates/exploded-aar/netCenterManS/androidPullToRefreshLib/unspecified/res/anim/slide_out_to_bottom.xml -->
+<!-- From: file:/Users/dzc/netCenterManS/androidPullToRefreshLib/src/main/res/anim/slide_out_to_bottom.xml --><!-- From: file:/Users/dzc/netCenterManS/netCenterManS/build/intermediates/exploded-aar/netCenterManS/androidPullToRefreshLib/unspecified/res/anim/slide_out_to_bottom.xml -->

@@ -6,7 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 import com.android.volley.toolbox.ImageLoader;
@@ -18,6 +21,7 @@ import com.gdin.netcentermans.R;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -31,10 +35,15 @@ import java.util.List;
 public class NewsFragment extends Fragment{
 
 	private View view;
+    private ListView lvNews;
+    private List<AVObject> data;
+    private MyAdapter adapter;
+
 	private ViewFlipper viewFlipper;
 
 	private static NewsFragment fragment;
-	public static NewsFragment getInstance(){
+
+    public static NewsFragment getInstance(){
 		if(fragment==null){
 			fragment = new NewsFragment();
 		}
@@ -52,38 +61,82 @@ public class NewsFragment extends Fragment{
 
 	private void initView(){
 		viewFlipper = (ViewFlipper) view.findViewById(R.id.vf_news);
+        lvNews = (ListView) view.findViewById(R.id.lv_news);
+        data = new ArrayList<>();
+        adapter = new MyAdapter(data);
+        lvNews.setAdapter(adapter);
+
 		AVQuery.getQuery("News").findInBackground(new FindCallback<AVObject>() {
 			@Override
 			public void done(List<AVObject> list, AVException e) {
 				if(e==null){
 					for(AVObject object:list){
-						ImageView imageView = new ImageView(getActivity());
-						String url = object.getAVFile("image").getUrl();
-						com.nostra13.universalimageloader.core.ImageLoader.getInstance().displayImage(url, imageView, new ImageLoadingListener() {
-							@Override
-							public void onLoadingStarted(String s, View view) {
+                        boolean isImgNews = object.getBoolean("isImgNews");
+                        if(isImgNews){
+                            ImageView imageView = new ImageView(getActivity());
+                            String url = object.getAVFile("image").getUrl();
+                            com.nostra13.universalimageloader.core.ImageLoader.getInstance().displayImage(url, imageView, new ImageLoadingListener() {
+                                @Override
+                                public void onLoadingStarted(String s, View view) {
 
-							}
+                                }
 
-							@Override
-							public void onLoadingFailed(String s, View view, FailReason failReason) {
+                                @Override
+                                public void onLoadingFailed(String s, View view, FailReason failReason) {
 
-							}
+                                }
 
-							@Override
-							public void onLoadingComplete(String s, View view, Bitmap bitmap) {
-								((ImageView)view).setImageBitmap(bitmap);
-								viewFlipper.addView(view);
-							}
+                                @Override
+                                public void onLoadingComplete(String s, View view, Bitmap bitmap) {
+                                    ((ImageView)view).setImageBitmap(bitmap);
+                                    viewFlipper.addView(view);
+                                }
 
-							@Override
-							public void onLoadingCancelled(String s, View view) {
+                                @Override
+                                public void onLoadingCancelled(String s, View view) {
 
-							}
-						});
+                                }
+                            });
+                        }else{
+                            data.add(object);
+                        }
+                        adapter.notifyDataSetChanged();
+
+
 					}
 				}
 			}
 		});
 	}
+
+    private class MyAdapter extends BaseAdapter{
+
+        private List<AVObject> data;
+
+        private MyAdapter(List<AVObject> data) {
+            this.data = data;
+        }
+
+        @Override
+        public int getCount() {
+            return data.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return 0;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            TextView tv = new TextView(getActivity());
+            tv.setText(data.get(position).getString("title"));
+            return tv;
+        }
+    }
 }
