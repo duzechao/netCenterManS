@@ -126,16 +126,6 @@ public class MyRepairFragment extends Fragment{
 									AVObject repair = data.get(position);
 									Bundle bundle = new Bundle();
 									bundle.putString("id", repair.getObjectId());
-/*									bundle.putString("title", repair.getString("title"));
-									bundle.putString("progress", repair.getString("progress"));
-									bundle.putString("appointTime", repair.getString("appointTime"));
-									bundle.putString("resolveTime", repair.getString("resolveTime"));
-									bundle.putString("resaon", repair.getString("reason"));
-                                    bundle.putString("userName",AVUser.getCurrentUser().getString("sName"));
-                                    bundle.putString("buildingName",AVUser.getCurrentUser().getAVObject("building").getString("name"));
-                                    //bundle.putString("buildingId",);
-                                    bundle.putString("house",AVUser.getCurrentUser().getString("house"));*/
-									//List managerUserIds = repair.getList("managerUserIds");
 									MyRepairInfoFragment fragment = new MyRepairInfoFragment();
 									fragment.setArguments(bundle);
 									getActivity().getSupportFragmentManager().beginTransaction().addToBackStack("myrepair").replace(R.id.frgment_main_content, fragment).commit();

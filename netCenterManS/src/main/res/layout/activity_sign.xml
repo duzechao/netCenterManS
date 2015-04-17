@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/ll_user_login" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0099cc">
+        <ImageView
+            android:id="@+id/img_sign_return"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_action_arrow_left"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="注册"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="17sp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_input"
+        android:layout_margin="16dp"
+       >
+
+
+        <TableRow
+            android:layout_margin="7dp"
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/snum"
+                android:textSize="17sp"
+                android:gravity="clip_vertical"
+                android:textColor="#333333"/>
+
+            <EditText
+                android:id="@+id/et_user_login_student_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:background="@null">
+
+                <requestFocus />
+            </EditText>
+
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"/>
+        <TableRow
+            android:layout_margin="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textSize="17sp"
+                android:textColor="#333333" />
+
+            <EditText
+                android:id="@+id/et_user_login_student_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@null"
+                >
+
+                <requestFocus />
+            </EditText>
+
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"/>
+        <TableRow
+            android:layout_margin="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上机号"
+                android:textSize="17sp"
+                android:textColor="#333333" />
+
+            <EditText
+                android:id="@+id/et_user_login_card_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@null"
+                >
+
+                <requestFocus />
+            </EditText>
+
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登陆密码"
+                android:textSize="17sp"
+                android:textColor="#333333"
+                android:layout_marginRight="20dp"/>
+            <EditText
+                android:id="@+id/et_user_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="请输入您的登陆密码"
+                android:background="@null"
+                android:inputType="textPassword" >
+            </EditText>
+
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"/>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="校区"
+                android:textSize="17sp"
+                android:textColor="#333333" />
+            <TextView
+                android:id="@+id/tv_school_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                >
+            </TextView>
+
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"/>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="楼栋"
+                android:textSize="17sp"
+                android:textColor="#333333" />
+            <TextView
+                android:id="@+id/tv_building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"/>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宿舍"
+                android:textSize="17sp"
+                android:textColor="#333333"/>
+            <EditText
+                android:id="@+id/et_house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="请输入您的宿舍房号"
+                android:background="@null"
+                 >
+            </EditText>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tv_user_login_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册" />
+
+</LinearLayout>

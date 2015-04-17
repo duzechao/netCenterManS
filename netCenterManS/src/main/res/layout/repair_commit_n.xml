@@ -60,7 +60,8 @@
         <EditText
             android:id="@+id/et_repair_reason_info"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="100dp"
+            android:maxLines="5"
             android:visibility="visible" >
         </EditText>
     </TableLayout>

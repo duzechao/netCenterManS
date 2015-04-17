@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.gdin.netcentermans"
-        minSdkVersion 8
+        minSdkVersion 11
         targetSdkVersion 21
     }
 
@@ -38,4 +38,5 @@ dependencies {
     compile project(':circleButtonLib')
     compile files('libs/universal-image-loader-1.9.3.jar')
     compile files('libs/easyandroidanimationslibrary-v0.5.jar')
+    compile project(':circleMenulibrary')
 }
