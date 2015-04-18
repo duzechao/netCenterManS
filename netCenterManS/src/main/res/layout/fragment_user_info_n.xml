@@ -6,6 +6,20 @@
     android:orientation="vertical"
     android:id="@+id/ll_user_info_commit">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0099cc">
+
+        <ImageView
+            android:id="@+id/img_user_info_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_action_cancel" />
+    </RelativeLayout>
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
@@ -192,20 +206,7 @@
             app:cpb_iconComplete="@drawable/ic_action_accept"
             app:cpb_iconError="@drawable/ic_action_cancel"
             android:visibility="gone"
-            android:layout_marginRight="40dp"
             app:cpb_textIdle="修改" />
-
-
-        <com.dd.CircularProgressButton
-            android:id="@+id/tv_user_info_submit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:cpb_cornerRadius="48dp"
-            app:cpb_iconComplete="@drawable/ic_action_accept"
-            app:cpb_iconError="@drawable/ic_action_cancel"
-            app:cpb_textIdle="返回" />
     </LinearLayout>
 
 

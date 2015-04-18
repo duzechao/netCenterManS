@@ -94,7 +94,10 @@ public class UserLoginFragment extends Fragment{
 					public void done(AVUser user, AVException e) {
 						// TODO Auto-generated method stub
 						if(e==null){
-                            user.setFetchWhenSave(true);
+							user.setFetchWhenSave(true);
+							user.put("installationId",MyApplication.installationId);
+							user.saveInBackground();
+
                            /* user.fetchInBackground("building",new GetCallback<AVObject>() {
                                 @Override
                                 public void done(AVObject avObject, AVException e) {
@@ -119,6 +122,8 @@ public class UserLoginFragment extends Fragment{
 							Toast.makeText(getActivity(), "用户不存在", Toast.LENGTH_LONG).show();
 						}else if(e.getCode() == AVException.USERNAME_PASSWORD_MISMATCH){
 							Toast.makeText(getActivity(), "用户名或密码错误", Toast.LENGTH_LONG).show();
+						}else if(e.getCode()==AVException.CONNECTION_FAILED){
+							Toast.makeText(getActivity(), "连接失败", Toast.LENGTH_LONG).show();
 						}else{
 							Toast.makeText(getActivity(), "登录失败", Toast.LENGTH_LONG).show();
 						}

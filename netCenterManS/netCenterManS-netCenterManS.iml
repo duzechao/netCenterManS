@@ -99,6 +99,7 @@
     <orderEntry type="library" exported="" name="android-async-http-1.4.6" level="project" />
     <orderEntry type="library" exported="" name="Java-WebSocket-1.2.0-leancloud" level="project" />
     <orderEntry type="library" exported="" name="qq.sdk.1.6.1" level="project" />
+    <orderEntry type="module" module-name="circleMenulibrary" exported="" />
     <orderEntry type="module" module-name="androidPullToRefreshLib" exported="" />
     <orderEntry type="module" module-name="circleButtonLib" exported="" />
   </component>

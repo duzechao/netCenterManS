@@ -8,18 +8,37 @@
     android:visibility="gone">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
-        <TextView
+        android:layout_height="50dp"
+        android:background="#0099cc">
+
+        <ImageView
             android:id="@+id/tv_news_content_return"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="返回"/>
+            android:padding="10dp"
+            android:src="@drawable/ic_action_arrow_left" />
+        <TextView
+            android:id="@+id/tv_main_content_title"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="fffffffffff"
+            android:gravity="left|center"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="70dp"
+            android:ellipsize="marquee"
+            android:textSize="20sp"
+            android:layout_height="match_parent" />
     </RelativeLayout>
     <TextView
         android:id="@+id/tv_news_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="446456456464"/>
+        android:text="446456456464"
+        android:textSize="17sp"
+        android:textColor="#333333"
+        android:padding="16sp"
+        android:autoLink="all"
+        android:gravity="center|left"/>
 
 </LinearLayout>
