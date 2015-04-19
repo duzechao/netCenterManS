@@ -57,7 +57,8 @@ public class UserInfoActivity extends ActionBarActivity {
         });
         AVUser user = AVUser.getCurrentUser();
         if(user==null){
-            Toast.makeText(UserInfoActivity.this, "���ȵ�¼", Toast.LENGTH_LONG).show();
+            Toast.makeText(UserInfoActivity.this, "账号出错，请退出重新登录", Toast.LENGTH_LONG).show();
+            finish();
         }else{
             tvSNum.setText(user.getString("sNum"));
             tvNName.setText(user.getString("sName"));

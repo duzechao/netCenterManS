@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_user_info_commit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/ll_user_info_commit">
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,190 +22,268 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_input"
+        android:padding="10dp">
 
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="50dp">
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
                 android:text="学号：" />
 
             <TextView
                 android:id="@+id/tv_user_info_student_num"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
                 android:text="TextView" />
         </TableRow>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"
+            android:gravity="center_vertical" />
+
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="50dp">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
                 android:text="姓名：" />
 
             <TextView
                 android:id="@+id/tv_user_info_student_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
                 android:text="TextView" />
         </TableRow>
 
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="1px"
+            android:background="#B0EFFC"
+            android:gravity="center_vertical" />
+
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/tv_house_l"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
                 android:text="宿舍：" />
 
             <EditText
                 android:id="@+id/et_user_info_student_house"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
+                android:layout_height="40dp"
                 android:background="@null"
-                android:labelFor="@id/tv_house_l"/>
+                android:labelFor="@id/tv_house_l"
+                android:text="TextView" />
         </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"
+            android:gravity="center_vertical" />
 
 
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
                 android:text="宿舍电话：" />
 
             <EditText
                 android:id="@+id/et_user_info_student_house_phone"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@null"/>
+                android:layout_height="40dp"
+                android:background="@null" />
         </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"
+            android:gravity="center_vertical" />
 
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
                 android:text="手机：" />
 
             <EditText
                 android:id="@+id/et_user_info_student_phone"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@null"/>
+                android:layout_height="40dp"
+                android:background="@null" />
         </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"
+            android:gravity="center_vertical" />
 
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="40dp">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
                 android:text="上机证号：" />
 
             <TextView
                 android:id="@+id/tv_user_info_student_card_num"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
                 android:text="TextView" />
         </TableRow>
 
-        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"
+            android:gravity="center_vertical" />
+
+
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
                 android:text="网卡物理地址：" />
 
             <TextView
                 android:id="@+id/tv_user_info_student_address"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="40dp"
+                android:gravity="center_vertical" />
         </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"
+            android:gravity="center_vertical" />
 
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
                 android:text="缴费时间：" />
 
             <TextView
                 android:id="@+id/tv_user_info_apply_time"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="40dp"
+                android:gravity="center_vertical" />
         </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"
+            android:gravity="center_vertical" />
 
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
                 android:text="缴费到期日期：" />
 
             <TextView
                 android:id="@+id/tv_user_info_expration_time"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="40dp"
+                android:gravity="center_vertical" />
         </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#B0EFFC"
+            android:gravity="center_vertical" />
+
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
                 android:text="IP信息：" />
 
             <TextView
                 android:id="@+id/tv_user_info_ip_info"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="40dp"
+                android:gravity="center_vertical" />
         </TableRow>
-        
+
 
     </TableLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:layout_gravity="center"
         android:orientation="horizontal">
+
         <com.dd.CircularProgressButton
             android:id="@+id/tv_user_info_save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textSize="18sp"
+            android:visibility="gone"
             app:cpb_cornerRadius="48dp"
             app:cpb_iconComplete="@drawable/ic_action_accept"
             app:cpb_iconError="@drawable/ic_action_cancel"
-            android:visibility="gone"
             app:cpb_textIdle="修改" />
     </LinearLayout>
 

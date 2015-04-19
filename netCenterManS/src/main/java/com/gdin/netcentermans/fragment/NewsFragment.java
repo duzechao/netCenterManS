@@ -73,7 +73,7 @@ public class NewsFragment extends Fragment{
 		viewFlipper = (ViewFlipper) view.findViewById(R.id.vf_news);
         llMain = (LinearLayout) view.findViewById(R.id.ll_news_main);
         llContent = (LinearLayout) view.findViewById(R.id.ll_news_content);
-        tvReturn = (TextView) view.findViewById(R.id.tv_news_content_return);
+        //tvReturn = (TextView) view.findViewById(R.id.tv_news_content_return);
         tvReturn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

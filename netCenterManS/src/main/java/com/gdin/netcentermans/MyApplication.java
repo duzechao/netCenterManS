@@ -11,6 +11,7 @@ import com.avos.avoscloud.AVOSCloud;
 import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.PushService;
 import com.avos.avoscloud.SaveCallback;
+import com.gdin.netcentermans.activity.Main2Activity;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -32,10 +33,10 @@ public class MyApplication extends Application{
         AVOSCloud.initialize(this,
                 "n672vu0h76ujkvbszsoe0yhedsuepp5i9rt9dp2k7t1p42zd",
                 "wp5jgq58xhoj4h7mcnr29wxoe8ifxasui717sjs15gyzj06f");
-        PushService.setDefaultPushCallback(this, MainActivity.class);
-        PushService.subscribe(this, "public", MainActivity.class);
-        PushService.subscribe(this, "private", MainActivity.class);
-        PushService.subscribe(this, "protected", MainActivity.class);
+        PushService.setDefaultPushCallback(this, Main2Activity.class);
+        PushService.subscribe(this, "public", Main2Activity.class);
+        PushService.subscribe(this, "private", Main2Activity.class);
+        PushService.subscribe(this, "protected", Main2Activity.class);
         AVInstallation.getCurrentInstallation().saveInBackground(
                 new SaveCallback() {
                     public void done(AVException e) {
