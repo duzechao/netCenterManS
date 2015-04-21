@@ -265,6 +265,8 @@ public class Main2Activity extends ActionBarActivity {
         tv1.setText("报修");
         tv2.setText("记录");
         tv3.setText("自助");
+        tv4.setText("分享");
+
 
 /*        tv1.setBackgroundResource(R.drawable.button_action_touch);
         tv2.setBackgroundResource(R.drawable.button_action_touch);
@@ -294,6 +296,18 @@ public class Main2Activity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Main2Activity.this,HelpActivity.class));
+            }
+        });
+
+        bt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_TEXT,"我正在使用广师网络管理客户端   ");
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT, "分享");
+                intent.putExtra(Intent.EXTRA_TITLE,"分享");
+                startActivity(Intent.createChooser(intent,"请选择要分享的平台"));
             }
         });
         final FloatingActionMenu rightLowerMenu = new FloatingActionMenu.Builder(this)
